@@ -16,4 +16,6 @@ Des répertoires tels
 	Core/
 	etc..
 
+Modification du texte dans l'écran titre (ajout de copyright 2013 goat team, goat edition)
+
 

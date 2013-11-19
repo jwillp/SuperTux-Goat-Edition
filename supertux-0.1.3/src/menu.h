@@ -1,5 +1,5 @@
 //  $Id: menu.h 1053 2004-05-09 18:08:02Z tobgle $
-// 
+//
 //  SuperTux
 //  Copyright (C) 2004 Tobias Glaesser <tobi.web@gmx.de>
 //
@@ -12,7 +12,7 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
-// 
+//
 //  You should have received a copy of the GNU General Public License
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
@@ -61,13 +61,13 @@ enum LevelEditorMainMenuIDs {
   MNID_SUBSETSETTINGS,
   MNID_QUITLEVELEDITOR
   };
-  
+
 enum LevelEditorSubsetSettingsIDs {
   MNID_SUBSETTITLE,
   MNID_SUBSETDESCRIPTION,
   MNID_SUBSETSAVECHANGES
   };
-  
+
 enum LevelEditorSubsetNewIDs {
  MNID_SUBSETNAME,
  MNID_CREATESUBSET
@@ -136,7 +136,7 @@ private:
 
 class Menu
 {
-private:  
+private:
   static std::vector<Menu*> last_menus;
   static Menu* current_;
 
@@ -177,7 +177,7 @@ private:
   /* input implementation variables */
   int delete_character;
   char mn_input_char;
-  
+
 public:
   Timer effect;
   int arrange_left;
@@ -190,9 +190,9 @@ public:
 
   void additem(MenuItem* pmenu_item);
   void additem(MenuItemKind kind, const std::string& text, int init_toggle, Menu* target_menu, int id = -1, int *int_p = NULL);
-  
+
   void  action ();
-  
+
   /** Remove all entries from the menu */
   void clear();
 
@@ -207,7 +207,7 @@ public:
 
   bool isToggled(int id);
 
-  void Menu::get_controlfield_key_into_input(MenuItem *item);
+  void get_controlfield_key_into_input(MenuItem *item);
 
   void draw   ();
   void draw_item(int index, int menu_width, int menu_height);
