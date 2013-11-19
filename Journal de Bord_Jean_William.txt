@@ -1,0 +1,12 @@
+19/11/2013
+Premières compilation des sources. Nous avons eu un problème mineur durant cette compilation venant du compilateur g++ qui n'accepte pas que l'on redéfinisse la nom d'une classe lors de la défénition d'une méthode.
+Ex:
+	class Menu{
+
+	Menu::open();
+
+	}
+IL fallait donc simplement modifier les sources (en retirant "Menu::") afin de régler ce problème. Problème porbablement du au fait que nous utilision g++ version 4. Les version antérieur ne ce souciait guère de ce genre de syntaxe.
+
+Aussi nous avons mis en place notre dépot git en le synchronisant sur github.
+
