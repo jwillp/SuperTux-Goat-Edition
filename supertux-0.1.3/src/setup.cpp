@@ -20,6 +20,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include <iostream>
+#include <sstream> 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -374,6 +375,7 @@ void st_menu(void)
 {
   main_menu      = new Menu();
   options_menu   = new Menu();
+  options_resolutions_menu = new Menu();
   options_keys_menu     = new Menu();
   options_joystick_menu = new Menu();
   load_game_menu = new Menu();
@@ -400,6 +402,10 @@ void st_menu(void)
   options_menu->additem(MN_DEACTIVE,"OpenGL (not supported)",use_gl, 0, MNID_OPENGL);
 #endif
   options_menu->additem(MN_TOGGLE,"Fullscreen",use_fullscreen,0, MNID_FULLSCREEN);
+
+  //Adding a resolution Menu
+  options_menu->additem(MN_GOTO,"Resolutions Setup",0,options_resolutions_menu);
+
   if(audio_device)
     {
       options_menu->additem(MN_TOGGLE,"Sound     ", use_sound,0, MNID_SOUND);
@@ -412,6 +418,46 @@ void st_menu(void)
     }
   options_menu->additem(MN_TOGGLE,"Show FPS  ",show_fps,0, MNID_SHOWFPS);
   options_menu->additem(MN_GOTO,"Keyboard Setup",0,options_keys_menu);
+
+
+
+
+  //RESOLUTION MENU - GOAT
+  options_resolutions_menu->additem(MN_LABEL, "Resolutions Setup",0,0);
+  options_resolutions_menu->additem(MN_HL,"",0,0);
+  options_resolutions_menu->additem(MN_STRINGSELECT,"Video Mode", 0,0,1);
+  //Pour chaque résolution ajouter un checkbox
+
+  //Obtention des modes
+  SDL_Rect **fullmodes;
+  fullmodes = SDL_ListModes(NULL, SDL_FULLSCREEN|SDL_HWSURFACE);
+  int i=0;
+
+  for(int i =0; fullmodes[i];i++)
+  {
+    //Convertir les int en string
+    std::ostringstream convert;
+    std::string mode;
+    convert << fullmodes[i]->w;
+    mode = convert.str();
+    mode += " x ";
+
+    convert.str( std::string() );
+    convert.clear();
+
+    convert << fullmodes[i]->h;
+    mode += convert.str();
+
+    string_list_add_item(options_resolutions_menu->get_item_by_id(1).list,mode.c_str());
+
+
+
+
+  }
+  options_resolutions_menu->additem(MN_HL,"",0,0);
+  options_resolutions_menu->additem(MN_BACK,"Back",0,0);
+  
+
 
   //if(use_joystick)
   //  options_menu->additem(MN_GOTO,"Joystick Setup",0,options_joystick_menu);
@@ -665,7 +711,7 @@ void st_video_setup(void)
   Surface::reload_all();
 
   /* Set window manager stuff: */
-  SDL_WM_SetCaption("SuperTux " VERSION, "SuperTux");
+  SDL_WM_SetCaption("SuperTux G.O.A.T Edition" VERSION, "SuperTux G.O.A.T Edition");
 }
 
 void st_video_setup_sdl(void)

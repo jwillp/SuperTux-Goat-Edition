@@ -1,0 +1,15 @@
+SCREEN RESOLUTION ==> setup.h, setup.cpp
+
+Native Resolution:
+	http://stackoverflow.com/questions/15575500/sdl-get-native-screen-resolution
+
+	SDL_INIT(SDL_INIT_EVERYTHING) //En début de programm
+	
+	setup.cpp ligne 675
+	const SDL_VideoInfo* videoInfo = SDL_GetVideoInfo();
+	int screenWidth = videoInfo->current_w;
+	int screenHeight = videoInfo->current_h;
+
+	
+
+	

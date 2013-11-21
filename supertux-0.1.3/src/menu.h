@@ -41,6 +41,7 @@ enum MainMenuIDs {
 enum OptionsMenuIDs {
   MNID_OPENGL,
   MNID_FULLSCREEN,
+  MNID_RESOLUTIONS,
   MNID_SOUND,
   MNID_MUSIC,
   MNID_SHOWFPS
@@ -234,6 +235,7 @@ extern Menu* main_menu;
 extern Menu* game_menu;
 extern Menu* worldmap_menu;
 extern Menu* options_menu;
+extern Menu* options_resolutions_menu;
 extern Menu* options_keys_menu;
 extern Menu* options_joystick_menu;
 extern Menu* highscore_menu;

@@ -51,6 +51,10 @@ Menu* main_menu      = 0;
 Menu* game_menu      = 0;
 Menu* worldmap_menu  = 0;
 Menu* options_menu   = 0;
+
+//Resolution Menu - GOAT
+Menu* options_resolutions_menu = 0;
+
 Menu* options_keys_menu     = 0;
 Menu* options_joystick_menu = 0;
 Menu* highscore_menu = 0;
