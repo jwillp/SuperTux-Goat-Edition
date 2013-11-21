@@ -18,4 +18,5 @@ Des répertoires tels
 
 Modification du texte dans l'écran titre (ajout de copyright 2013 goat team, goat edition)
 
-
+20/11/13
+Petites modifications graphiques, création des version Air, Eau et Terre du personnage principal (Tux)
