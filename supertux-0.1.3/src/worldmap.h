@@ -1,5 +1,5 @@
 //  $Id: worldmap.h 1746 2004-08-11 11:09:42Z wansti $
-// 
+//
 //  SuperTux
 //  Copyright (C) 2004 Ingo Ruhnke <grumbel@gmx.de>
 //
@@ -12,7 +12,7 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
-// 
+//
 //  You should have received a copy of the GNU General Public License
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
@@ -36,7 +36,7 @@ struct Point
 
   Point& operator=(const Point& pos)
   { x = pos.x;
-    y = pos.y; 
+    y = pos.y;
     return *this; }
 
   Point(int x_, int y_)
@@ -60,7 +60,7 @@ class Tile
 public:
   Tile();
   ~Tile();
-  
+
   Surface* sprite;
 
   // Directions in which Tux is allowed to walk from this tile
@@ -108,8 +108,14 @@ public:
 private:
   WorldMap* worldmap;
   Surface* largetux_sprite;
-  Surface* firetux_sprite;
   Surface* smalltux_sprite;
+
+  //4 elements - GOAT
+  Surface* firetux_sprite;
+  Surface* watertux_sprite;
+  Surface* earthtux_sprite;
+  Surface* airtux_sprite;
+
 
   Direction input_direction;
   Direction direction;
@@ -120,10 +126,10 @@ private:
   bool  moving;
 
   void stop();
-public: 
+public:
   Tux(WorldMap* worldmap_);
   ~Tux();
-  
+
   void draw(const Point& offset);
   void update(float delta);
 
@@ -131,8 +137,8 @@ public:
 
   bool is_moving() const { return moving; }
   Point get_pos();
-  Point get_tile_pos() const { return tile_pos; } 
-  void  set_tile_pos(Point p) { tile_pos = p; } 
+  Point get_tile_pos() const { return tile_pos; }
+  void  set_tile_pos(Point p) { tile_pos = p; }
 };
 
 /** */
@@ -154,7 +160,7 @@ private:
   std::vector<int> tilemap;
   int width;
   int height;
-  
+
   int start_x;
   int start_y;
 
@@ -176,7 +182,7 @@ public:
     /** Message to show in the Map during a certain time */
     std::string display_map_message;
     bool passive_message;
-	 
+
 	 /** Teleporters */
 	 int teleport_dest_x;
 	 int teleport_dest_y;
@@ -229,7 +235,7 @@ public:
   void display();
 
   void load_map();
-  
+
   void get_input();
 
   /** Update Tux position */
@@ -252,10 +258,10 @@ public:
 
   const std::string& get_world_title() const
     { return name; }
-  
+
   const int& get_start_x() const
     { return start_x; }
-  
+
   const int& get_start_y() const
     { return start_y; }
 

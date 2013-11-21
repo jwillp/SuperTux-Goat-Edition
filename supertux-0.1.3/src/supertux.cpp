@@ -1,5 +1,5 @@
 //  $Id: supertux.cpp 997 2004-05-05 16:07:20Z rmcruz $
-// 
+//
 //  SuperTux
 //  Copyright (C) 2004 Tobias Glaesser <tobi.web@gmx.de>
 //
@@ -12,7 +12,7 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
-// 
+//
 //  You should have received a copy of the GNU General Public License
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
@@ -38,7 +38,7 @@ int main(int argc, char * argv[])
 {
   st_directory_setup();
   parseargs(argc, argv);
-  
+
   st_audio_setup();
   st_video_setup();
   st_joystick_setup();
@@ -46,20 +46,17 @@ int main(int argc, char * argv[])
   st_menu();
   loadshared();
 
-  if (launch_leveleditor_mode && level_startup_file)
-    {
-    leveleditor(level_startup_file);
-    }
-  else if (level_startup_file)
-    {
+  if (launch_leveleditor_mode && level_startup_file){
+      leveleditor(level_startup_file);
+  }
+  else if (level_startup_file){
       GameSession session(level_startup_file, 1, ST_GL_LOAD_LEVEL_FILE);
       session.run();
-    }
-  else
-    {  
+
+  }else{
       title();
-    }
-  
+  }
+
   clearscreen(0, 0, 0);
   updatescreen();
 
@@ -70,6 +67,6 @@ int main(int argc, char * argv[])
   Surface::debug_check();
 #endif
   st_shutdown();
-  
+
   return 0;
 }

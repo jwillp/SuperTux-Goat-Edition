@@ -55,7 +55,7 @@ public:
   int left;
   int right;
   int fire;
-  
+
   PlayerKeymap();
 };
 
@@ -103,7 +103,17 @@ struct PlayerSprite
 
 extern PlayerSprite smalltux;
 extern PlayerSprite largetux;
+
+
+//4 elements - GOAT
 extern PlayerSprite firetux;
+extern PlayerSprite watertux;
+extern PlayerSprite airtux;
+extern PlayerSprite earthtux;
+
+
+
+
 
 class Player : public GameObject
 {
@@ -112,6 +122,10 @@ public:
 
   player_input_type  input;
   bool got_coffee;
+
+  int spriteNumber;
+
+
   int size;
   bool duck;
   bool holding_something;
@@ -133,6 +147,11 @@ public:
   Timer kick_timer;
   Physic physic;
 
+
+
+
+
+
 public:
   void init();
   int  key_event(SDLKey key, int state);
@@ -152,9 +171,9 @@ public:
   void grow();
 
   void jump_of_badguy(BadGuy* badguy);
-  
+
   std::string type() { return "Player";};
-  
+
 private:
   void handle_horizontal_input();
   void handle_vertical_input();

@@ -130,7 +130,7 @@
          (x-hotspot 8)
          (y-hotspot 3)
          (images "shared/largetux-skid-left.png"))
-        
+
  (sprite (name "largetux-stand-left")
          (x-hotspot 5)
          (y-hotspot 1)
@@ -218,7 +218,7 @@
          (x-hotspot 8)
          (y-hotspot 3)
          (images "shared/firetux-skid-left.png"))
-        
+
  (sprite (name "firetux-stand-left")
          (x-hotspot 5)
          (y-hotspot 1)
@@ -268,6 +268,267 @@
          (y-hotspot 1)
          (images "shared/firetux-grab-right-0.png"))
 
+
+ ;; Watertux
+ (sprite (name "watertux-walk-left")
+         (x-hotspot 6)
+         (y-hotspot 2)
+         (images "shared/watertux-walk-left-0.png"
+                 "shared/watertux-walk-left-1.png"
+                 "shared/watertux-walk-left-2.png"
+                 "shared/watertux-walk-left-3.png"
+                 "shared/watertux-walk-left-4.png"
+                 "shared/watertux-walk-left-5.png"))
+
+ (sprite (name "watertux-walk-right")
+         (x-hotspot 6)
+         (y-hotspot 2)
+         (images "shared/watertux-walk-right-0.png"
+                 "shared/watertux-walk-right-1.png"
+                 "shared/watertux-walk-right-2.png"
+                 "shared/watertux-walk-right-3.png"
+                 "shared/watertux-walk-right-4.png"
+                 "shared/watertux-walk-right-5.png"))
+
+ (sprite (name "watertux-skid-right")
+         (x-hotspot 8)
+         (y-hotspot 3)
+         (images "shared/watertux-skid-right.png"))
+
+ (sprite (name "watertux-skid-left")
+         (x-hotspot 8)
+         (y-hotspot 3)
+         (images "shared/watertux-skid-left.png"))
+
+ (sprite (name "watertux-stand-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/watertux-stand-left.png"))
+
+ (sprite (name "watertux-stand-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/watertux-stand-right.png"))
+
+ (sprite (name "watertux-jump-left")
+         (x-hotspot 9)
+         (y-hotspot 2)
+         (images "shared/watertux-jump-left-0.png"))
+ (sprite (name "watertux-jump-right")
+         (x-hotspot 9)
+         (y-hotspot 2)
+         (images "shared/watertux-jump-right-0.png"))
+
+ (sprite (name "watertux-duck-left")
+         (x-hotspot 6)
+         (y-hotspot 6)
+         (images "shared/watertux-duck-left.png"))
+ (sprite (name "watertux-duck-right")
+         (x-hotspot 6)
+         (y-hotspot 6)
+         (images "shared/watertux-duck-right.png"))
+
+
+ (sprite (name "watertux-kick-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/watertux-kick-left-0.png"))
+
+ (sprite (name "watertux-kick-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/watertux-kick-right-0.png"))
+
+ (sprite (name "watertux-grab-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/watertux-grab-left-0.png"))
+
+ (sprite (name "watertux-grab-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/watertux-grab-right-0.png"))
+
+
+
+
+
+
+
+;; EarthTux
+ (sprite (name "earthtux-walk-left")
+         (x-hotspot 6)
+         (y-hotspot 2)
+         (images "shared/earthtux-walk-left-0.png"
+                 "shared/earthtux-walk-left-1.png"
+                 "shared/earthtux-walk-left-2.png"
+                 "shared/earthtux-walk-left-3.png"
+                 "shared/earthtux-walk-left-4.png"
+                 "shared/earthtux-walk-left-5.png"))
+
+ (sprite (name "earthtux-walk-right")
+         (x-hotspot 6)
+         (y-hotspot 2)
+         (images "shared/earthtux-walk-right-0.png"
+                 "shared/earthtux-walk-right-1.png"
+                 "shared/earthtux-walk-right-2.png"
+                 "shared/earthtux-walk-right-3.png"
+                 "shared/earthtux-walk-right-4.png"
+                 "shared/earthtux-walk-right-5.png"))
+
+ (sprite (name "earthtux-skid-right")
+         (x-hotspot 8)
+         (y-hotspot 3)
+         (images "shared/earthtux-skid-right.png"))
+
+ (sprite (name "earthtux-skid-left")
+         (x-hotspot 8)
+         (y-hotspot 3)
+         (images "shared/earthtux-skid-left.png"))
+
+ (sprite (name "earthtux-stand-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/earthtux-stand-left.png"))
+
+ (sprite (name "earthtux-stand-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/earthtux-stand-right.png"))
+
+ (sprite (name "earthtux-jump-left")
+         (x-hotspot 9)
+         (y-hotspot 2)
+         (images "shared/earthtux-jump-left-0.png"))
+ (sprite (name "earthtux-jump-right")
+         (x-hotspot 9)
+         (y-hotspot 2)
+         (images "shared/earthtux-jump-right-0.png"))
+
+ (sprite (name "earthtux-duck-left")
+         (x-hotspot 6)
+         (y-hotspot 6)
+         (images "shared/earthtux-duck-left.png"))
+ (sprite (name "earthtux-duck-right")
+         (x-hotspot 6)
+         (y-hotspot 6)
+         (images "shared/earthtux-duck-right.png"))
+
+
+ (sprite (name "earthtux-kick-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/earthtux-kick-left-0.png"))
+
+ (sprite (name "earthtux-kick-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/earthtux-kick-right-0.png"))
+
+ (sprite (name "earthtux-grab-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/earthtux-grab-left-0.png"))
+
+ (sprite (name "earthtux-grab-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/earthtux-grab-right-0.png"))
+
+
+
+
+;; Airtux
+ (sprite (name "airtux-walk-left")
+         (x-hotspot 6)
+         (y-hotspot 2)
+         (images "shared/airtux-walk-left-0.png"
+                 "shared/airtux-walk-left-1.png"
+                 "shared/airtux-walk-left-2.png"
+                 "shared/airtux-walk-left-3.png"
+                 "shared/airtux-walk-left-4.png"
+                 "shared/airtux-walk-left-5.png"))
+
+ (sprite (name "airtux-walk-right")
+         (x-hotspot 6)
+         (y-hotspot 2)
+         (images "shared/airtux-walk-right-0.png"
+                 "shared/airtux-walk-right-1.png"
+                 "shared/airtux-walk-right-2.png"
+                 "shared/airtux-walk-right-3.png"
+                 "shared/airtux-walk-right-4.png"
+                 "shared/airtux-walk-right-5.png"))
+
+ (sprite (name "airtux-skid-right")
+         (x-hotspot 8)
+         (y-hotspot 3)
+         (images "shared/airtux-skid-right.png"))
+
+ (sprite (name "airtux-skid-left")
+         (x-hotspot 8)
+         (y-hotspot 3)
+         (images "shared/airtux-skid-left.png"))
+
+ (sprite (name "airtux-stand-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/airtux-stand-left.png"))
+
+ (sprite (name "airtux-stand-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/airtux-stand-right.png"))
+
+ (sprite (name "airtux-jump-left")
+         (x-hotspot 9)
+         (y-hotspot 2)
+         (images "shared/airtux-jump-left-0.png"))
+ (sprite (name "airtux-jump-right")
+         (x-hotspot 9)
+         (y-hotspot 2)
+         (images "shared/airtux-jump-right-0.png"))
+
+ (sprite (name "airtux-duck-left")
+         (x-hotspot 6)
+         (y-hotspot 6)
+         (images "shared/airtux-duck-left.png"))
+ (sprite (name "airtux-duck-right")
+         (x-hotspot 6)
+         (y-hotspot 6)
+         (images "shared/airtux-duck-right.png"))
+
+
+ (sprite (name "airtux-kick-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/airtux-kick-left-0.png"))
+
+ (sprite (name "airtux-kick-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/airtux-kick-right-0.png"))
+
+ (sprite (name "airtux-grab-left")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/airtux-grab-left-0.png"))
+
+ (sprite (name "airtux-grab-right")
+         (x-hotspot 5)
+         (y-hotspot 1)
+         (images "shared/airtux-grab-right-0.png"))
+
+
+
+
+
+
+
+
+
+
+
+
  ;; Laptop
  (sprite (name "mriceblock-left")
          (x-hotspot 2)
@@ -294,7 +555,7 @@
          (x-hotspot 2)
          (y-hotspot 3)
          (images "shared/mriceblock-flat-left.png"))
- 
+
  (sprite (name "mriceblock-flat-left")
          (x-hotspot 2)
          (y-hotspot 3)
@@ -351,7 +612,7 @@
                  "shared/mrbomb-right-1.png"
                  "shared/mrbomb-right-2.png"
                  "shared/mrbomb-right-3.png"))
- 
+
 
  (sprite (name "mrbomb-ticking-left")
          (fps 15.0)

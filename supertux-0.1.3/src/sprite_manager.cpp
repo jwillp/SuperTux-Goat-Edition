@@ -85,8 +85,7 @@ Sprite*
 SpriteManager::load(const std::string& name)
 {
   Sprites::iterator i = sprites.find(name);
-  if (i != sprites.end())
-    {
+  if (i != sprites.end()){
       return i->second;
     }
   else

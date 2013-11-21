@@ -27,7 +27,7 @@
 #include "sprite_manager.h"
 #include "setup.h"
 
-Surface* img_waves[3]; 
+Surface* img_waves[3];
 Surface* img_water;
 Surface* img_pole;
 Surface* img_poletop;
@@ -82,6 +82,9 @@ void loadshared()
   largetux.duck_left   = sprite_manager->load("largetux-duck-left");
   largetux.duck_right  = sprite_manager->load("largetux-duck-right");
 
+
+  //4 ELEMENTS - GOAT
+
   firetux.stand_left  = sprite_manager->load("firetux-stand-left");
   firetux.stand_right = sprite_manager->load("firetux-stand-right");
   firetux.walk_left   = sprite_manager->load("firetux-walk-left");
@@ -96,6 +99,61 @@ void loadshared()
   firetux.grab_right  = sprite_manager->load("firetux-grab-right");
   firetux.duck_left   = sprite_manager->load("firetux-duck-left");
   firetux.duck_right  = sprite_manager->load("firetux-duck-right");
+
+
+  watertux.stand_left  = sprite_manager->load("watertux-stand-left");
+  watertux.stand_right = sprite_manager->load("watertux-stand-right");
+  watertux.walk_left   = sprite_manager->load("watertux-walk-left");
+  watertux.walk_right  = sprite_manager->load("watertux-walk-right");
+  watertux.jump_left   = sprite_manager->load("watertux-jump-left");
+  watertux.jump_right  = sprite_manager->load("watertux-jump-right");
+  watertux.kick_left   = sprite_manager->load("watertux-kick-left");
+  watertux.kick_right  = sprite_manager->load("watertux-kick-right");
+  watertux.skid_right  = sprite_manager->load("watertux-skid-right");
+  watertux.skid_left   = sprite_manager->load("watertux-skid-left");
+  watertux.grab_left   = sprite_manager->load("watertux-grab-left");
+  watertux.grab_right  = sprite_manager->load("watertux-grab-right");
+  watertux.duck_left   = sprite_manager->load("watertux-duck-left");
+  watertux.duck_right  = sprite_manager->load("watertux-duck-right");
+
+  earthtux.stand_left  = sprite_manager->load("earthtux-stand-left");
+  earthtux.stand_right = sprite_manager->load("earthtux-stand-right");
+  earthtux.walk_left   = sprite_manager->load("earthtux-walk-left");
+  earthtux.walk_right  = sprite_manager->load("earthtux-walk-right");
+  earthtux.jump_left   = sprite_manager->load("earthtux-jump-left");
+  earthtux.jump_right  = sprite_manager->load("earthtux-jump-right");
+  earthtux.kick_left   = sprite_manager->load("earthtux-kick-left");
+  earthtux.kick_right  = sprite_manager->load("earthtux-kick-right");
+  earthtux.skid_right  = sprite_manager->load("earthtux-skid-right");
+  earthtux.skid_left   = sprite_manager->load("earthtux-skid-left");
+  earthtux.grab_left   = sprite_manager->load("earthtux-grab-left");
+  earthtux.grab_right  = sprite_manager->load("earthtux-grab-right");
+  earthtux.duck_left   = sprite_manager->load("earthtux-duck-left");
+  earthtux.duck_right  = sprite_manager->load("earthtux-duck-right");
+
+  airtux.stand_left  = sprite_manager->load("airtux-stand-left");
+  airtux.stand_right = sprite_manager->load("airtux-stand-right");
+  airtux.walk_left   = sprite_manager->load("airtux-walk-left");
+  airtux.walk_right  = sprite_manager->load("airtux-walk-right");
+  airtux.jump_left   = sprite_manager->load("airtux-jump-left");
+  airtux.jump_right  = sprite_manager->load("airtux-jump-right");
+  airtux.kick_left   = sprite_manager->load("airtux-kick-left");
+  airtux.kick_right  = sprite_manager->load("airtux-kick-right");
+  airtux.skid_right  = sprite_manager->load("airtux-skid-right");
+  airtux.skid_left   = sprite_manager->load("airtux-skid-left");
+  airtux.grab_left   = sprite_manager->load("airtux-grab-left");
+  airtux.grab_right  = sprite_manager->load("airtux-grab-right");
+  airtux.duck_left   = sprite_manager->load("airtux-duck-left");
+  airtux.duck_right  = sprite_manager->load("airtux-duck-right");
+
+
+
+
+
+
+
+
+
 
   /* Water: */
   img_water = new Surface(datadir + "/images/shared/water.png", IGNORE_ALPHA);
