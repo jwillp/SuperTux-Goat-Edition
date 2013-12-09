@@ -13,7 +13,7 @@
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
 //
-//  You should have received a copy of the GNU General Public License
+//  You should have received a copy of the GNU General Public License2
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
@@ -94,11 +94,11 @@ Bullet::action(double frame_ratio)
   base.y = base.y + base.ym * frame_ratio;
 
   collision_swept_object_map(&old_base,&base);
-      
+
   if (issolid(base.x, base.y + 4) || issolid(base.x, base.y))
     {
       base.y  = old_y;
-      base.ym = -base.ym;     
+      base.ym = -base.ym;
       if (base.ym > 9)
         base.ym = 9;
       else if (base.ym < -9)
@@ -120,14 +120,24 @@ Bullet::action(double frame_ratio)
 
 }
 
-void 
+void
 Bullet::draw()
 {
   if (base.x >= scroll_x - base.width &&
       base.x <= scroll_x + screen->w)
     {
-      if(Player::getPower() == Player::Power::FIRE)
+      if(Player::playerPower == "fire")
         img_bullet->draw(base.x - scroll_x, base.y);
+
+      if(Player::playerPower == "water")
+        img_waterbullet->draw(base.x - scroll_x, base.y);
+
+      if(Player::playerPower == "air")
+        img_airbullet->draw(base.x - scroll_x, base.y);
+
+      if(Player::playerPower == "earth")
+        img_earthbullet->draw(base.x - scroll_x, base.y);
+
     }
 }
 
@@ -218,7 +228,7 @@ Upgrade::action(double frame_ratio)
     if(physic.get_velocity_y() != 0) {
       if(issolid(base.x, base.y + base.height)) {
         base.y = int(base.y / 32) * 32;
-        old_base = base;                         
+        old_base = base;
         if(kind == UPGRADE_GROWUP) {
           physic.enable_gravity(false);
           physic.set_velocity(dir == LEFT ? -GROWUP_SPEED : GROWUP_SPEED, 0);
@@ -239,7 +249,7 @@ Upgrade::action(double frame_ratio)
   // horizontal bounce?
   if(kind == UPGRADE_GROWUP || kind == UPGRADE_HERRING) {
     if (  (physic.get_velocity_x() < 0
-          && issolid(base.x, (int) base.y + base.height/2)) 
+          && issolid(base.x, (int) base.y + base.height/2))
         ||  (physic.get_velocity_x() > 0
           && issolid(base.x + base.width, (int) base.y + base.height/2))) {
         physic.set_velocity(-physic.get_velocity_x(),physic.get_velocity_y());
@@ -302,7 +312,7 @@ Upgrade::bump(Player* )
     return;
 
   play_sound(sounds[SND_BUMP_UPGRADE], SOUND_CENTER_SPEAKER);
-  
+
   // do a little jump and change direction
   physic.set_velocity(-physic.get_velocity_x(), 3);
   dir = dir == LEFT ? RIGHT : LEFT;

@@ -119,11 +119,7 @@ class Player : public GameObject
 {
 public:
 
-  enum Power{FIRE, AIR, WATER, EARTH};
-  static Power playerPower;
-  static Power getPower(){
-      return playerPower;
-  }
+
 
   enum HurtMode { KILL, SHRINK };
 
@@ -181,11 +177,27 @@ public:
 
   std::string type() { return "Player";};
 
+  static std::string playerPower;
+  static std::string getPower(){ return playerPower; };
+
+
+
+
 private:
   void handle_horizontal_input();
   void handle_vertical_input();
   void remove_powerups();
 };
+
+
+
+
+
+
+
+
+
+
 
 #endif /*SUPERTUX_PLAYER_H*/
 

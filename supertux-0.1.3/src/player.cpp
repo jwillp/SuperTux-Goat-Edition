@@ -30,6 +30,9 @@
 
 #define AUTOSCROLL_DEAD_INTERVAL 300
 
+
+std::string Player::playerPower = "void";
+
 Surface* tux_life;
 
 Sprite* smalltux_gameover;
@@ -42,6 +45,10 @@ PlayerSprite largetux;
 
 
 //4 elements - GOAT
+
+
+std::string playerPower;
+
 PlayerSprite firetux;
 PlayerSprite watertux;
 PlayerSprite airtux;
@@ -569,27 +576,26 @@ Player::draw()
           else if (got_coffee){
 
             if (spriteNumber == 1){
-                 std::cout << "fire";
-                 playerPower = FIRE;
-                  sprite = &firetux; //Fire
+                std::cout << "fire";
+                playerPower = "fire";
+                sprite = &firetux; //Fire
               }
               else if (spriteNumber == 2)
               {
                 std::cout << "water";
-                playerPower = WATER;
+                playerPower = "water";
                 sprite = &watertux; //Water
 
               }
               else if(spriteNumber == 3){
                  std::cout << "earth";
-                 playerPower = EARTH;
+                 playerPower = "earth";
                  sprite = &earthtux; //Earth
                                }
               else{
-                  std::cout << "air";
-                  playerPower = AIR;
-                 sprite = &airtux; //Air
-
+                std::cout << "air";
+                playerPower = "air";
+                sprite = &airtux; //Air
               }
 
 

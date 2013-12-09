@@ -747,7 +747,7 @@
                  "shared/iceflower-1.png"))
 
 
-//   FIRE BULLET
+  ;; FIRE BULLET
  (sprite (name "bullet")
          (x-hotspot 12)
          (x-hotspot 12)
@@ -758,7 +758,7 @@
                  "shared/bullet-4.png"))
 
 
-//   AIR BULLET
+;; AIR BULLET
 (sprite (name "airbullet")
          (x-hotspot 12)
          (x-hotspot 12)
@@ -769,7 +769,7 @@
                  "shared/airbullet-4.png"))
 
 
-//   WATER BULLET
+;; WATER BULLET
 (sprite (name "waterbullet")
          (x-hotspot 12)
          (x-hotspot 12)
@@ -780,7 +780,7 @@
                  "shared/waterbullet-4.png"))
 
 
-//   EARTH BULLET
+;;   EARTH BULLET
 (sprite (name "earthbullet")
          (x-hotspot 12)
          (x-hotspot 12)
