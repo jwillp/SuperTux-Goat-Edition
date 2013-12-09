@@ -570,21 +570,24 @@ Player::draw()
 
             if (spriteNumber == 1){
                  std::cout << "fire";
+                 playerPower = FIRE;
                   sprite = &firetux; //Fire
               }
               else if (spriteNumber == 2)
               {
                 std::cout << "water";
+                playerPower = WATER;
                 sprite = &watertux; //Water
 
               }
               else if(spriteNumber == 3){
                  std::cout << "earth";
-
+                 playerPower = EARTH;
                  sprite = &earthtux; //Earth
                                }
               else{
                   std::cout << "air";
+                  playerPower = AIR;
                  sprite = &airtux; //Air
 
               }

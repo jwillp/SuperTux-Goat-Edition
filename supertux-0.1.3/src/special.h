@@ -69,6 +69,7 @@ class Bullet : public GameObject
 {
  public:
   int life_count;
+  
   base_type base;
   base_type old_base;
   

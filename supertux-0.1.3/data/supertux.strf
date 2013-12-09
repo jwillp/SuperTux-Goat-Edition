@@ -746,6 +746,8 @@
                  "shared/iceflower-2.png"
                  "shared/iceflower-1.png"))
 
+
+//   FIRE BULLET
  (sprite (name "bullet")
          (x-hotspot 12)
          (x-hotspot 12)
@@ -754,6 +756,39 @@
                  "shared/bullet-2.png"
                  "shared/bullet-3.png"
                  "shared/bullet-4.png"))
+
+
+//   AIR BULLET
+(sprite (name "airbullet")
+         (x-hotspot 12)
+         (x-hotspot 12)
+         (fps 20)
+         (images "shared/airbullet-1.png"
+                 "shared/airbullet-2.png"
+                 "shared/airbullet-3.png"
+                 "shared/airbullet-4.png"))
+
+
+//   WATER BULLET
+(sprite (name "waterbullet")
+         (x-hotspot 12)
+         (x-hotspot 12)
+         (fps 20)
+         (images "shared/waterbullet-1.png"
+                 "shared/waterbullet-2.png"
+                 "shared/waterbullet-3.png"
+                 "shared/waterbullet-4.png"))
+
+
+//   EARTH BULLET
+(sprite (name "earthbullet")
+         (x-hotspot 12)
+         (x-hotspot 12)
+         (fps 20)
+         (images "shared/earthbullet-1.png"
+                 "shared/earthbullet-2.png"
+                 "shared/earthbullet-3.png"
+                 "shared/earthbullet-4.png"))
  )
 
 ;; EOF ;;

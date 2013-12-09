@@ -32,6 +32,9 @@
 #include "resources.h"
 
 Sprite* img_bullet;
+Sprite* img_airbullet;
+Sprite* img_waterbullet;
+Sprite* img_earthbullet;
 Sprite* img_star;
 Sprite* img_growup;
 Sprite* img_iceflower;
@@ -123,7 +126,8 @@ Bullet::draw()
   if (base.x >= scroll_x - base.width &&
       base.x <= scroll_x + screen->w)
     {
-      img_bullet->draw(base.x - scroll_x, base.y);
+      if(Player::getPower() == Player::Power::FIRE)
+        img_bullet->draw(base.x - scroll_x, base.y);
     }
 }
 
@@ -364,7 +368,10 @@ void load_special_gfx()
   img_star      = sprite_manager->load("star");
   img_1up       = sprite_manager->load("1up");
 
-  img_bullet    = sprite_manager->load("bullet");
+  img_bullet      = sprite_manager->load("bullet");
+  img_airbullet   = sprite_manager->load("airbullet");
+  img_waterbullet = sprite_manager->load("waterbullet");
+  img_earthbullet = sprite_manager->load("earthbullet");
 }
 
 void free_special_gfx()

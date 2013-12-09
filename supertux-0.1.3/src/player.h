@@ -118,6 +118,13 @@ extern PlayerSprite earthtux;
 class Player : public GameObject
 {
 public:
+
+  enum Power{FIRE, AIR, WATER, EARTH};
+  static Power playerPower;
+  static Power getPower(){
+      return playerPower;
+  }
+
   enum HurtMode { KILL, SHRINK };
 
   player_input_type  input;

@@ -1,0 +1,13 @@
+Journal de bord (25nov2013)
+
+Aujourd'hui, comme j'ai pris du retard au dernier cours avec une preocupation plus grande pour un autre projet, j'ai concentre mes efforts sur l'apprentissage du programme que nous allions modifier. Jean-William a deja presque fini les parties qu'il voulait modifier donc cela me donne un atout car je n'ai pas a fonctionner avec pleins de versions differentes. Le code est assez simple mais comme je n'ai pas encore vu l'oriente objet avec C++, j'ai du mettre a outils les connaissances de Java. 
+
+Ma partie va etre plus axee sur les attaques. Comme nos penguins changent d'elements (couleurs), nous devons mettre les animations d'attaques coordonees. Donc mon travail sera plus concentre sur les codes sources "special.cpp" et "special.h".
+
+
+
+Journal de bord (30nov2013)
+
+Aujourd'hui, je me suis attaquer au graphique des attaques que je dois modifier par la suite. Pour chaques elements, il aura une attaque de la meme couleur que son element. Comme les attaques peuvent aller d'en haut en bas, de gauche a droite, je dois faire 4 graphiques differents. 
+
+Au prochain cours je dois m'attaquer au sprite et au code. Donc je devrais decider de la couleur d'attaque par rapport a la couleur de notre joueur. Bien sur, j'aurais besoin de l'aide d'internet et de Jean-William mais je devrais y arriver. 
